@@ -4,7 +4,7 @@
 <!DOCTYPE PLUGIN [
   <!ENTITY name      "unRAID6-Sanoid">
   <!ENTITY author    "Steini1984">
-  <!ENTITY version   "2.0.3">
+  <!ENTITY version   "2.1.0">
   <!ENTITY repo      "https://raw.githubusercontent.com/&author;/unRAID6-Sainoid/master">
   <!ENTITY pluginURL "&repo;/&name;.plg">
   <!ENTITY plugin    "/boot/config/plugins/&name;">
@@ -20,8 +20,13 @@
 <CHANGES>
 
 
+###2021.04.03
+Update to Sanoid 2.1.0
+https://github.com/jimsalterjrs/sanoid/releases/tag/v2.1.0
+
 ###2020.10.07
 Initial release Sanoid 2.0.3
+
 
 </CHANGES>
 
@@ -52,7 +57,7 @@ perl-Capture-Tiny-0.48-x86_64-1ponce.txz
 perl-Config-IniFiles-2.82-x86_64-3_slonly.txz
 perl-Exporter-Tiny-0.042-x86_64-1_slack.txz
 perl-List-MoreUtils-0.425-x86_64-2_slonly.txz
-sanoid.2.0.3.x86_64.tgz
+sanoid.2.1.0.x86_64.tgz
 "
 
 #Download and install a package
