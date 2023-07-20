@@ -4,7 +4,7 @@
 <!DOCTYPE PLUGIN [
   <!ENTITY name      "unRAID6-Sanoid">
   <!ENTITY author    "Steini1984">
-  <!ENTITY version   "2.1.0">
+  <!ENTITY version   "2.2.0">
   <!ENTITY repo      "https://raw.githubusercontent.com/&author;/unRAID6-Sainoid/master">
   <!ENTITY pluginURL "&repo;/&name;.plg">
   <!ENTITY plugin    "/boot/config/plugins/&name;">
@@ -19,6 +19,10 @@
 
 <CHANGES>
 
+
+###2023.07.20
+Update to Sanoid 2.2.0 and dependencies (mbuffer and  perl)
+https://github.com/jimsalterjrs/sanoid/releases/tag/v2.2.0
 
 ###2021.04.03
 Update to Sanoid 2.1.0
@@ -52,12 +56,12 @@ iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAABhGlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1I
 PACKAGES="
 lzop-1.04-x86_64-2_slonly.txz
 mbuffer.20200505.x86_64.tgz
-perl-5.30.3-x86_64-1.txz
+perl-5.34.0-x86_64-2_slack15.0.txz
 perl-Capture-Tiny-0.48-x86_64-1ponce.txz
 perl-Config-IniFiles-2.82-x86_64-3_slonly.txz
-perl-Exporter-Tiny-0.042-x86_64-1_slack.txz
+perl-Exporter-Tiny-1.000000-x86_64-1ponce.txz
 perl-List-MoreUtils-0.425-x86_64-2_slonly.txz
-sanoid.2.1.0.x86_64.tgz
+sanoid.2.2.0.x86_64.tgz
 "
 
 #Download and install a package
