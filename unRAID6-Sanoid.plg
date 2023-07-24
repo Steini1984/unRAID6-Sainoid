@@ -55,7 +55,7 @@ iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAABhGlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1I
 
 PACKAGES="
 lzop-1.04-x86_64-2_slonly.txz
-mbuffer.20200505.x86_64.tgz
+mbuffer-20230301.tgz
 perl-5.34.0-x86_64-2_slack15.0.txz
 perl-Capture-Tiny-0.48-x86_64-1ponce.txz
 perl-Config-IniFiles-2.82-x86_64-3_slonly.txz
