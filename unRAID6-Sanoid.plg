@@ -1,23 +1,16 @@
-<?xml version='1.0' standalone='yes'?>
-
+<?xml version="1.0" standalone="yes"?>
 <!-- PLUGIN DEFINITIONS -->
 <!DOCTYPE PLUGIN [
-  <!ENTITY name      "unRAID6-Sanoid">
-  <!ENTITY author    "Steini1984">
-  <!ENTITY version   "2.2.0a">
-  <!ENTITY repo      "https://raw.githubusercontent.com/&author;/unRAID6-Sainoid/master">
-  <!ENTITY pluginURL "&repo;/&name;.plg">
-  <!ENTITY plugin    "/boot/config/plugins/&name;">
-  <!ENTITY emhttp    "/usr/local/emhttp/plugins/&name;">
+<!ENTITY name "unRAID6-Sanoid">
+<!ENTITY author "Steini1984">
+<!ENTITY version "2.2.0a">
+<!ENTITY repo "https://raw.githubusercontent.com/&author;/unRAID6-Sainoid/master">
+<!ENTITY pluginURL "&repo;/&name;.plg">
+<!ENTITY plugin "/boot/config/plugins/&name;">
+<!ENTITY emhttp "/usr/local/emhttp/plugins/&name;">
 ]>
-
-<PLUGIN  name="&name;"
-     author="&author;"
-     version="&version;"
-     pluginURL="&pluginURL;"
->
-
-<CHANGES>
+<PLUGIN name="&name;" author="&author;" version="&version;" pluginURL="&pluginURL;" support="https://forums.unraid.net/topic/94549-sanoidsyncoid-zfs-snapshots-and-replication/">
+  <CHANGES>
 
 ###2023.07.26
 New version of mbuffer fixed
@@ -35,29 +28,26 @@ Initial release Sanoid 2.0.3
 
 
 </CHANGES>
-
-<FILE Name="&emhttp;/README.md">
-<INLINE>
+  <FILE Name="&emhttp;/README.md">
+    <INLINE>
 Sanoid for unRAID 6
 
 Sanoid is a policy-driven snapshot management tool for ZFS filesystems.
 
 </INLINE>
-</FILE>
-
-<FILE Name="&emhttp;/unRAID6-Sanoid.png" Type="base64">
-<INLINE>
+  </FILE>
+  <FILE Name="&emhttp;/unRAID6-Sanoid.png" Type="base64">
+    <INLINE>
 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
 </INLINE>
-</FILE>
-
-<FILE Run="/bin/bash">
-<INLINE>
+  </FILE>
+  <FILE Run="/bin/bash">
+    <INLINE>
 
 
 PACKAGES="
 lzop-1.04-x86_64-2_slonly.txz
-mbuffer-20230301.tgz
+mbuffer-20240107-x86_64-1_SBo.tgz
 perl-5.34.0-x86_64-2_slack15.0.txz
 perl-Capture-Tiny-0.48-x86_64-1ponce.txz
 perl-Config-IniFiles-2.82-x86_64-3_slonly.txz
@@ -115,17 +105,15 @@ echo "**************************************************************************
 echo "Sanoid installed - you need to manually schedule Sanoid - for example with Cron"
 echo "* * * * * TZ=UTC /usr/local/bin/sanoid --cron"
 echo ""
-echo "please read the guide @ https://github.com/jimsalterjrs/sanoid"
+echo "please read the guide&#xA0;@ https://github.com/jimsalterjrs/sanoid"
 echo "********************************************************************************"
 echo ""
 
 </INLINE>
-</FILE>
-
-
-<!-- PLUGIN REMOVAL SCRIPT -->
-<FILE Run="/bin/bash" Method="remove">
-<INLINE>
+  </FILE>
+  <!-- PLUGIN REMOVAL SCRIPT -->
+  <FILE Run="/bin/bash" Method="remove">
+    <INLINE>
 echo "+=============================================================================="
 echo "| Uninstalling Sanoid"
 echo "+=============================================================================="
@@ -135,5 +123,5 @@ rm -rf &plugin;/packages
 echo ""
 echo "Sanoid plugin uninstalled and will be removed on next reboot "
 </INLINE>
-</FILE>
+  </FILE>
 </PLUGIN>
