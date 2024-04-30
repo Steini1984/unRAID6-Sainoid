@@ -3,7 +3,7 @@
 <!DOCTYPE PLUGIN [
 <!ENTITY name "unRAID6-Sanoid">
 <!ENTITY author "Steini1984">
-<!ENTITY version "2.2.0a">
+<!ENTITY version "2.2.0b">
 <!ENTITY repo "https://raw.githubusercontent.com/&author;/unRAID6-Sainoid/master">
 <!ENTITY pluginURL "&repo;/&name;.plg">
 <!ENTITY plugin "/boot/config/plugins/&name;">
@@ -11,6 +11,9 @@
 ]>
 <PLUGIN name="&name;" author="&author;" version="&version;" pluginURL="&pluginURL;" support="https://forums.unraid.net/topic/94549-sanoidsyncoid-zfs-snapshots-and-replication/">
   <CHANGES>
+
+###2024.04.30
+New version of mbuffer fixed - mbuffer-20240107-x86_64-1_SBo.tgz (compiled by @SoerenS from https://slackbuilds.org/repository/15.0/system/mbuffer/)
 
 ###2023.07.26
 New version of mbuffer fixed
