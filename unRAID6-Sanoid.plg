@@ -2,10 +2,10 @@
 
 <!-- PLUGIN DEFINITIONS -->
 <!DOCTYPE PLUGIN [
-  <!ENTITY name      "unRAID6-Sanoid">
-  <!ENTITY author    "Steini1984">
-  <!ENTITY version   "2.2.0a">
-  <!ENTITY repo      "https://raw.githubusercontent.com/&author;/unRAID6-Sainoid/master">
+<!ENTITY name "unRAID6-Sanoid">
+<!ENTITY author "Steini1984">
+<!ENTITY version "2.2.0b">
+<!ENTITY repo "https://raw.githubusercontent.com/&author;/unRAID6-Sainoid/master">
   <!ENTITY pluginURL "&repo;/&name;.plg">
   <!ENTITY plugin    "/boot/config/plugins/&name;">
   <!ENTITY emhttp    "/usr/local/emhttp/plugins/&name;">
@@ -18,6 +18,9 @@
 >
 
 <CHANGES>
+
+###2024.04.30
+New version of mbuffer fixed - mbuffer-20240107-x86_64-1_SBo.tgz (compiled by @SoerenS from https://slackbuilds.org/repository/15.0/system/mbuffer/)
 
 ###2023.07.26
 New version of mbuffer fixed
@@ -57,7 +60,7 @@ iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAABhGlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1I
 
 PACKAGES="
 lzop-1.04-x86_64-2_slonly.txz
-mbuffer-20230301.tgz
+mbuffer-20240107-x86_64-1_SBo.tgz
 perl-5.34.0-x86_64-2_slack15.0.txz
 perl-Capture-Tiny-0.48-x86_64-1ponce.txz
 perl-Config-IniFiles-2.82-x86_64-3_slonly.txz
