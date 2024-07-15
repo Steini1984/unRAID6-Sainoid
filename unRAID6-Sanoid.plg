@@ -4,7 +4,7 @@
 <!DOCTYPE PLUGIN [
 <!ENTITY name "unRAID6-Sanoid">
 <!ENTITY author "Steini1984">
-<!ENTITY version "2.2.0c">
+<!ENTITY version "2.2.0d">
 <!ENTITY repo "https://raw.githubusercontent.com/&author;/unRAID6-Sainoid/master">
   <!ENTITY pluginURL "&repo;/&name;.plg">
   <!ENTITY plugin    "/boot/config/plugins/&name;">
@@ -18,6 +18,9 @@
 >
 
 <CHANGES>
+
+###2024.07.15
+Do not install perl package on unraid 6.11.0 or later
 
 ###2024.07.11
 Do not install mbuffer and perl package on unraid 7
@@ -72,13 +75,19 @@ sanoid.2.2.0.x86_64.tgz
 
 # Append packages required for unraid 6
 source /etc/unraid-version
-version=${version:0:2}
-if [[ $((${version/./}*1)) -lt 7 ]]; then
+major=${version:0:2}
+minor=${version:2:2}
+if [[ $((${major/./}*1)) -lt 7 ]]; then
   PACKAGES="
 mbuffer-20240107-x86_64-1_SBo.tgz
+${PACKAGES}
+"
+  if [[ $((${minor/./}*1)) -lt 11 ]]; then
+    PACKAGES="
 perl-5.34.0-x86_64-2_slack15.0.txz
 ${PACKAGES}
 "
+  fi
 fi
 
 #Download and install a package
