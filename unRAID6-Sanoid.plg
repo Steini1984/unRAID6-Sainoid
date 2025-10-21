@@ -4,7 +4,7 @@
 <!DOCTYPE PLUGIN [
 <!ENTITY name "unRAID6-Sanoid">
 <!ENTITY author "Steini1984">
-<!ENTITY version "2.2.0d">
+<!ENTITY version "2.3.0">
 <!ENTITY repo "https://raw.githubusercontent.com/&author;/unRAID6-Sainoid/master">
   <!ENTITY pluginURL "&repo;/&name;.plg">
   <!ENTITY plugin    "/boot/config/plugins/&name;">
@@ -18,6 +18,10 @@
 >
 
 <CHANGES>
+
+###2025.10.21
+Update to Sanoid 2.3.0
+https://github.com/jimsalterjrs/sanoid/releases/tag/v2.3.0
 
 ###2024.07.15
 Do not install perl package on unraid 6.11.0 or later
@@ -70,7 +74,7 @@ perl-Capture-Tiny-0.48-x86_64-1ponce.txz
 perl-Config-IniFiles-2.82-x86_64-3_slonly.txz
 perl-Exporter-Tiny-1.000000-x86_64-1ponce.txz
 perl-List-MoreUtils-0.425-x86_64-2_slonly.txz
-sanoid.2.2.0.x86_64.tgz
+sanoid.2.3.0.x86_64.tgz
 "
 
 # Append packages required for unraid 6
